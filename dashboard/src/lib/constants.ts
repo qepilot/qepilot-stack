@@ -74,7 +74,7 @@ export const FEATURED_ITEMS: FeaturedItem[] = [
 
 export const NAV_LINKS = {
   github: 'https://github.com/davila7/claude-code-templates',
-  docs: 'https://docs.stack.qapilot.live/',
+  docs: 'https://github.com/qepilot/qepilot-stack#readme',
   blog: 'https://stack.qapilot.live/blog/',
   trending: 'https://stack.qapilot.live/trending.html',
 };

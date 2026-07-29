@@ -4,9 +4,9 @@ import { corsResponse, jsonResponse } from '../../lib/api/cors';
 import { captureApiError } from '../../lib/api/error-tracking';
 
 const ENDPOINTS_TO_CHECK = [
-  { url: 'https://stack.qapilot.live/api/track-download-supabase', method: 'OPTIONS' },
-  { url: 'https://stack.qapilot.live/api/track-command-usage', method: 'OPTIONS' },
-  { url: 'https://stack.qapilot.live/api/track-website-events', method: 'OPTIONS' },
+  { url: 'https://app.qapilot.live/api/track-download-supabase', method: 'OPTIONS' },
+  { url: 'https://app.qapilot.live/api/track-command-usage', method: 'OPTIONS' },
+  { url: 'https://app.qapilot.live/api/track-website-events', method: 'OPTIONS' },
 ];
 
 const TIMEOUT_MS = 10000;

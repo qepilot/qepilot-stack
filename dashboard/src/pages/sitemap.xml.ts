@@ -5,7 +5,7 @@ import { FEATURED_ITEMS } from '../lib/constants';
 
 export const prerender = true;
 
-const SITE = 'https://stack.qapilot.live';
+const SITE = 'https://app.qapilot.live';
 
 interface UrlOpts {
   priority?: string;
