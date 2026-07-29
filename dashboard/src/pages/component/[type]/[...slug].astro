@@ -193,29 +193,29 @@ const componentSchema = component
           '@type': 'SoftwareApplication',
           name: title,
           description: seoDescription,
-          url: `https://www.aitmpl.com${canonicalPath}`,
+          url: `https://stack.qapilot.live${canonicalPath}`,
           applicationCategory: 'DeveloperApplication',
           operatingSystem: 'Windows, macOS, Linux',
           softwareRequirements: 'Node.js 18+, Claude Code CLI',
           installUrl: 'https://www.npmjs.com/package/claude-code-templates',
           offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-          author: { '@id': 'https://www.aitmpl.com/#organization' },
+          author: { '@id': 'https://stack.qapilot.live/#organization' },
         },
         {
           '@type': 'BreadcrumbList',
           itemListElement: [
-            { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.aitmpl.com/' },
+            { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://stack.qapilot.live/' },
             {
               '@type': 'ListItem',
               position: 2,
               name: config?.label ?? typePlural,
-              item: `https://www.aitmpl.com/${typePlural}`,
+              item: `https://stack.qapilot.live/${typePlural}`,
             },
             {
               '@type': 'ListItem',
               position: 3,
               name: title,
-              item: `https://www.aitmpl.com${canonicalPath}`,
+              item: `https://stack.qapilot.live${canonicalPath}`,
             },
           ],
         },
@@ -225,7 +225,7 @@ const componentSchema = component
 ---
 
 <DashboardLayout
-  title={`${title} — ${config?.label ?? 'Component'} for Claude Code | AI Templates`}
+  title={`${title} — ${config?.label ?? 'Component'} for Claude Code | QEPilot Stack`}
   description={seoDescription}
 >
   {componentSchema && (

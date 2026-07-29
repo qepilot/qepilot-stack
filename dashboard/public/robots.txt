@@ -1,5 +1,5 @@
-# robots.txt - Claude Code Templates
-# https://www.aitmpl.com
+# robots.txt - QEPilot Stack
+# https://stack.qapilot.live
 
 User-agent: *
 Allow: /
@@ -20,4 +20,4 @@ Allow: /
 User-agent: CCBot
 Disallow: /
 
-Sitemap: https://www.aitmpl.com/sitemap.xml
+Sitemap: https://stack.qapilot.live/sitemap.xml

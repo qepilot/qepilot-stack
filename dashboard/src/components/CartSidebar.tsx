@@ -86,7 +86,7 @@ export default function CartSidebar() {
 
   function shareTwitter() {
     const cmd = generateCommand();
-    const text = `Check out my Claude Code stack!\n\n${cmd}\n\nBuild yours at https://aitmpl.com`;
+    const text = `Check out my Claude Code stack!\n\n${cmd}\n\nBuild yours at https://stack.qapilot.live`;
     window.open(`https://twitter.com/intent/tweet?text=${encodeURIComponent(text)}`, '_blank');
   }
 

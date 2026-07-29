@@ -1,4 +1,4 @@
-name = "aitmpl-dashboard"
+name = "qepilot-stack-dashboard"
 compatibility_date = "2024-09-23"
 compatibility_flags = ["nodejs_compat"]
 

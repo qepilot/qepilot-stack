@@ -26,7 +26,7 @@ async function getComponents(): Promise<Record<string, unknown[]>> {
   const controller = new AbortController();
   const timeoutId = setTimeout(() => controller.abort(), 10000);
 
-  const response = await fetch('https://www.aitmpl.com/components.json', {
+  const response = await fetch('https://stack.qapilot.live/components.json', {
     signal: controller.signal,
   });
   clearTimeout(timeoutId);
@@ -96,7 +96,7 @@ function createEmbed(component: Component, type = 'info') {
               ? 'hook'
               : component.type;
   const category = component.category || 'general';
-  const url = `https://www.aitmpl.com/component/${typeLabel}/${category}/${component.name}`;
+  const url = `https://stack.qapilot.live/component/${typeLabel}/${category}/${component.name}`;
 
   if (type === 'install') {
     const flagName = component.type === 'templates' ? 'template' : component.type;
@@ -108,7 +108,7 @@ function createEmbed(component: Component, type = 'info') {
       url,
       fields: [
         { name: 'Installation Command', value: `\`\`\`bash\n${installCommand}\n\`\`\``, inline: false },
-        { name: 'Component Page', value: `[View on aitmpl.com](${url})`, inline: false },
+        { name: 'Component Page', value: `[View on stack.qapilot.live](${url})`, inline: false },
       ],
       timestamp: new Date().toISOString(),
     };
@@ -123,7 +123,7 @@ function createEmbed(component: Component, type = 'info') {
       { name: 'Type', value: `\`${component.type}\``, inline: true },
       { name: 'Category', value: component.category || 'N/A', inline: true },
       { name: 'Downloads', value: `${component.downloads || 0}`, inline: true },
-      { name: 'Component Page', value: `[View on aitmpl.com](${url})`, inline: false },
+      { name: 'Component Page', value: `[View on stack.qapilot.live](${url})`, inline: false },
     ],
     timestamp: new Date().toISOString(),
   };
@@ -185,10 +185,10 @@ export const POST: APIRoute = async ({ request }) => {
                               ? 'hook'
                               : c.type;
                   const cat = c.category || 'general';
-                  const cUrl = `https://www.aitmpl.com/component/${tLabel}/${cat}/${c.name}`;
+                  const cUrl = `https://stack.qapilot.live/component/${tLabel}/${cat}/${c.name}`;
                   return {
                     name: `${i + 1}. ${componentTypes[c.type || '']?.icon || '📦'} ${c.name}`,
-                    value: `**Type:** ${c.type} | **Downloads:** ${c.downloads || 0}\n[View on aitmpl.com](${cUrl})`,
+                    value: `**Type:** ${c.type} | **Downloads:** ${c.downloads || 0}\n[View on stack.qapilot.live](${cUrl})`,
                     inline: false,
                   };
                 }),

@@ -181,7 +181,7 @@ export default function SendToRepoModal({ items, collectionName, onClose }: Prop
           ...Object.keys(files).map((f) => `- \`${f}\``),
           '',
           '---',
-          `Sent from [AI Templates](https://app.aitmpl.com/my-components)`,
+          `Sent from [QEPilot Stack](https://app.qapilot.live/my-components)`,
         ].join('\n')
       );
 

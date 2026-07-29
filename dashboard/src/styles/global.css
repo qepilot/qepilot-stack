@@ -890,3 +890,48 @@ html.light .stat-today-active {
 .card-terminal:hover {
   border-color: var(--color-accent);
 }
+
+/* ═══════════════════════════════════════════════════════════════
+   QEPilot Stack — theme layer
+
+   Appended so it overrides the tokens above by cascade order, rather
+   than editing them in place. Keeps `git fetch upstream` merges clean.
+   ═══════════════════════════════════════════════════════════════ */
+
+:root,
+html.dark {
+  --color-surface-0: #0A0F19;
+  --color-surface-1: #101826;
+  --color-surface-2: #17202F;
+  --color-surface-3: #1D2839;
+  --color-surface-4: #243044;
+
+  --color-border:        #243044;
+  --color-border-hover:  #3ED9B6;
+  --color-border-strong: #2E3B52;
+
+  --color-text-primary:   #DDE4EF;
+  --color-text-secondary: #8093AB;
+  --color-text-tertiary:  #6B7C93;
+
+  --color-accent:       #3ED9B6;
+  --color-accent-hover: #6FE7CB;
+  --color-accent-light: rgba(62, 217, 182, 0.12);
+
+  --color-success:    #4FCF87;
+  --color-success-bg: rgba(79, 207, 135, 0.1);
+
+  --color-card-bg:    #101826;
+  --color-card-hover: #17202F;
+}
+
+html.light {
+  --color-accent:       #14867A;
+  --color-accent-hover: #0F6C62;
+  --color-accent-light: rgba(20, 134, 122, 0.1);
+  --color-border-hover: #14867A;
+}
+
+.ascii-art { color: var(--color-accent); }
+
+::selection { background: var(--color-accent); color: #06121A; }

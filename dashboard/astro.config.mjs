@@ -4,7 +4,7 @@ import cloudflare from '@astrojs/cloudflare';
 import tailwindcss from '@tailwindcss/vite';
 
 export default defineConfig({
-  site: 'https://www.aitmpl.com',
+  site: 'https://stack.qapilot.live',
   output: 'server',
   adapter: cloudflare({ mode: 'directory' }),
   integrations: [react()],

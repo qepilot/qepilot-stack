@@ -34,7 +34,7 @@ export async function fetchComponents(): Promise<ComponentsData> {
   // Server-side: resolve relative URLs to absolute (fetch() needs full URL on Node)
   let url = COMPONENTS_JSON_URL;
   if (typeof window === 'undefined' && url.startsWith('/')) {
-    const base = import.meta.env.SITE || 'https://www.aitmpl.com';
+    const base = import.meta.env.SITE || 'https://stack.qapilot.live';
     url = `${base}${url}`;
   }
 
@@ -83,7 +83,7 @@ export interface SearchIndexEntry {
 /** Resolve a same-origin path to an absolute URL when running server-side. */
 function toAbsolute(pathUrl: string): string {
   if (typeof window === 'undefined' && pathUrl.startsWith('/')) {
-    const base = import.meta.env.SITE || 'https://www.aitmpl.com';
+    const base = import.meta.env.SITE || 'https://stack.qapilot.live';
     return `${base}${pathUrl}`;
   }
   return pathUrl;
@@ -230,7 +230,7 @@ export async function fetchComponentContent(type: string, slug: string): Promise
   // Resolve to absolute URL on the server (fetch() requires it)
   let url = urlPath;
   if (typeof window === 'undefined' && urlPath.startsWith('/')) {
-    const base = import.meta.env.SITE || 'https://www.aitmpl.com';
+    const base = import.meta.env.SITE || 'https://stack.qapilot.live';
     url = `${base}${urlPath}`;
   }
 

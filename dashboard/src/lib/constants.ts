@@ -60,7 +60,7 @@ export const FEATURED_ITEMS: FeaturedItem[] = [
     tagColor: '#c5e063',
     category: 'Product Planning',
     ctaLabel: 'Try BrainGrid',
-    ctaUrl: 'https://www.braingrid.ai?utm_source=aitmpl&utm_medium=featured&utm_campaign=partner',
+    ctaUrl: 'https://www.braingrid.ai?utm_source=qepilot-stack&utm_medium=featured&utm_campaign=partner',
     websiteUrl: 'https://www.braingrid.ai',
     metadata: {
       Integration: 'MCP, CLI',
@@ -74,7 +74,7 @@ export const FEATURED_ITEMS: FeaturedItem[] = [
 
 export const NAV_LINKS = {
   github: 'https://github.com/davila7/claude-code-templates',
-  docs: 'https://docs.aitmpl.com/',
-  blog: 'https://aitmpl.com/blog/',
-  trending: 'https://aitmpl.com/trending.html',
+  docs: 'https://docs.stack.qapilot.live/',
+  blog: 'https://stack.qapilot.live/blog/',
+  trending: 'https://stack.qapilot.live/trending.html',
 };

@@ -5,7 +5,7 @@
  * dependency, works the same on Cloudflare Pages' Workers runtime as it
  * does locally. Mirrors the pattern used in cloudflare-workers/{worker}/sentry.js.
  *
- * Env var required: SENTRY_DSN (DSN from the "aitmpl-dashboard" Sentry project)
+ * Env var required: SENTRY_DSN (DSN from the "qepilot-stack-dashboard" Sentry project)
  */
 
 interface ParsedDsn {
@@ -87,7 +87,7 @@ export async function captureApiError(
   const body = `${envelopeHeader}\n${itemHeader}\n${JSON.stringify(event)}\n`;
 
   const endpoint = `https://${parsed.host}/api/${parsed.projectId}/envelope/`;
-  const authHeader = `Sentry sentry_version=7, sentry_client=aitmpl-dashboard/1.0, sentry_key=${parsed.publicKey}`;
+  const authHeader = `Sentry sentry_version=7, sentry_client=qepilot-stack-dashboard/1.0, sentry_key=${parsed.publicKey}`;
 
   try {
     await fetch(endpoint, {
