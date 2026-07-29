@@ -1,190 +1,104 @@
-[![npm version](https://img.shields.io/npm/v/claude-code-templates.svg)](https://www.npmjs.com/package/claude-code-templates)
-[![npm downloads](https://img.shields.io/npm/dt/claude-code-templates.svg)](https://www.npmjs.com/package/claude-code-templates)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
-[![Sponsored by Z.AI](https://img.shields.io/badge/Sponsored%20by-Z.AI-2563eb?style=flat&logo=data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTEyIDJMMiAyMkgyMkwxMiAyWiIgZmlsbD0id2hpdGUiLz4KPC9zdmc+)](https://z.ai/subscribe?ic=8JVLJQFSKB&utm_source=github&utm_medium=badge&utm_campaign=readme)
-[![Claude for Open Source](https://img.shields.io/badge/Claude-Open%20Source%20Program-D97757?style=flat&logo=data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48Y2lyY2xlIGN4PSIxMiIgY3k9IjEyIiByPSIzIiBmaWxsPSJ3aGl0ZSIvPjwvc3ZnPg==)](https://claude.com/contact-sales/claude-for-oss)
-[![Neon Open Source Program](https://img.shields.io/badge/Neon-Open%20Source%20Program-00E599?style=flat)](https://get.neon.com/4eCjZDz)
-[![GitHub Sponsors](https://img.shields.io/badge/GitHub%20Sponsors-sponsor-EA4AAA?style=flat&logo=githubsponsors&logoColor=white)](https://github.com/sponsors/davila7)
-[![Buy Me A Coffee](https://img.shields.io/badge/Buy%20Me%20A%20Coffee-support-yellow?style=flat&logo=buy-me-a-coffee)](https://buymeacoffee.com/daniavila)
-[![GitHub stars](https://img.shields.io/github/stars/davila7/claude-code-templates.svg?style=social&label=Star)](https://github.com/davila7/claude-code-templates)
+# QEPilot Stack
 
-<p align="center">
-  <a href="https://trendshift.io/repositories/15113" target="_blank">
-    <img src="https://trendshift.io/api/badge/repositories/15113" alt="davila7%2Fclaude-code-templates | Trendshift" style="width: 200px; height: 40px;" width="125" height="40"/>
-  </a>
-  <br />
-  <br />
-  <a href="https://vercel.com/oss">
-  <img alt="Vercel OSS Program" src="https://vercel.com/oss/program-badge.svg" />
-  </a>
-  &nbsp;&nbsp;
-  <a href="https://get.neon.com/4eCjZDz">
-  <img alt="Neon Open Source Program" src="https://img.shields.io/badge/Neon-Open%20Source%20Program-00E599?style=for-the-badge" />
-  </a>
-  &nbsp;&nbsp;
-  <a href="https://claude.com/contact-sales/claude-for-oss">
-  <img alt="Claude for Open Source" src="docs/claude-oss-badge.svg" height="48" />
-  </a>
-</p>
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
----
+A browsable catalogue of Claude Code components — agents, commands, skills, MCP
+servers, hooks and settings — with a one-line install for each.
 
-<p align="center">
-  <a href="https://get.brightdata.com/lcqorc6nzp9w" target="_blank">
-    <img src="https://avatars.githubusercontent.com/u/213028976?s=200&v=4" alt="Bright Data" width="90" />
-  </a>
-</p>
+| | |
+|---|---|
+| **Dashboard** | https://app.qapilot.live |
+| **Static site** | http://stack.qapilot.live |
 
-<h3 align="center">Sponsored by <a href="https://get.brightdata.com/lcqorc6nzp9w">Bright Data</a></h3>
+## What this is
 
-<p align="center">
-  <b>Bright Data proudly supports this project.</b><br />
-  Connect Claude Code to live web data — try their <a href="https://get.brightdata.com/lcqorc6nzp9w">Skills and MCPs</a> for web search, scraping, and structured data feeds.
-</p>
+Claude Code can be extended with reusable components: subagents that specialise
+in a task, custom slash commands, skills, MCP server configs, hooks and settings
+bundles. This project indexes them and makes them searchable, so you can find
+one and install it without hunting through a repository.
 
-<p align="center">
-  <a href="https://get.brightdata.com/lcqorc6nzp9w">
-    <img src="https://img.shields.io/badge/Try%20Bright%20Data-Free-2563eb?style=for-the-badge" alt="Try Bright Data Free" />
-  </a>
-</p>
+Install any component with the upstream CLI:
 
 ```bash
-# Install the Bright Data Skills + MCP for Claude Code
-npx claude-code-templates@latest --skill web-data/search,web-data/scrape,web-data/data-feeds,web-data/bright-data-mcp,web-data/bright-data-best-practices,development/brightdata-local-search --mcp web-data/brightdata --yes
+npx claude-code-templates@latest --skill creative-design/frontend-design
+npx claude-code-templates@latest --agent development-team/frontend-developer
+npx claude-code-templates@latest --command testing/generate-tests
 ```
 
----
+## Repository layout
 
-# QEPilot Stack ([stack.qapilot.live](https://stack.qapilot.live))
+| Path | What it is |
+|---|---|
+| `dashboard/` | Astro 5 + React + Tailwind app — serves `app.qapilot.live`, deployed to Cloudflare Pages |
+| `docs/` | Older static HTML site — serves `stack.qapilot.live` via GitHub Pages |
+| `cli-tool/` | The `claude-code-templates` npm CLI and the component library it installs from |
+| `cloudflare-workers/` | Scheduled workers (cron, reports, newsletter) |
+| `scripts/` | Catalogue generation — `generate_components_json.py` builds the JSON both sites read |
 
-**Ready-to-use configurations for Anthropic's Claude Code.** A comprehensive collection of AI agents, custom commands, settings, hooks, external integrations (MCPs), and project templates to enhance your development workflow.
-
-## Browse & Install Components and Templates
-
-**[Browse All Templates](https://stack.qapilot.live)** - Interactive web interface to explore and install 100+ agents, commands, settings, hooks, and MCPs.
-
-<img width="1787" height="958" alt="image" src="https://github.com/user-attachments/assets/d84feaa4-f871-4843-bbee-42d8f51b2f21" />
-
-
-## 🚀 Quick Installation
+## Local development
 
 ```bash
-# Install a complete development stack
-npx claude-code-templates@latest --agent development-team/frontend-developer --command testing/generate-tests --mcp development/github-integration --yes
+# Dashboard (Astro) — http://localhost:4321
+cd dashboard && npm install && npm run dev
 
-# Browse and install interactively
-npx claude-code-templates@latest
-
-# Install specific components
-npx claude-code-templates@latest --agent development-tools/code-reviewer --yes
-npx claude-code-templates@latest --command performance/optimize-bundle --yes
-npx claude-code-templates@latest --setting performance/mcp-timeouts --yes
-npx claude-code-templates@latest --hook git/pre-commit-validation --yes
-npx claude-code-templates@latest --mcp database/postgresql-integration --yes
+# Static site — http://localhost:8908
+python3 -m http.server 8908 --directory docs
 ```
 
-## What You Get
-
-| Component | Description | Examples |
-|-----------|-------------|----------|
-| **🤖 Agents** | AI specialists for specific domains | Security auditor, React performance optimizer, database architect |
-| **⚡ Commands** | Custom slash commands | `/generate-tests`, `/optimize-bundle`, `/check-security` |
-| **🔌 MCPs** | External service integrations | GitHub, PostgreSQL, Stripe, AWS, OpenAI |
-| **⚙️ Settings** | Claude Code configurations | Timeouts, memory settings, output styles |
-| **🪝 Hooks** | Automation triggers | Pre-commit validation, post-completion actions |
-| **🎨 Skills** | Reusable capabilities with progressive disclosure | PDF processing, Excel automation, custom workflows |
-
-## 🛠️ Additional Tools
-
-Beyond the template catalog, QEPilot Stack includes powerful development tools:
-
-### 📊 Claude Code Analytics
-Monitor your AI-powered development sessions in real-time with live state detection and performance metrics.
+Regenerate the component catalogue after adding or changing components:
 
 ```bash
-npx claude-code-templates@latest --analytics
+python3 scripts/generate_components_json.py
 ```
 
-### 💬 Conversation Monitor  
-Mobile-optimized interface to view Claude responses in real-time with secure remote access.
+## Deploying
+
+The dashboard deploys to Cloudflare Pages:
 
 ```bash
-# Local access
-npx claude-code-templates@latest --chats
-
-# Secure remote access via Cloudflare Tunnel
-npx claude-code-templates@latest --chats --tunnel
+cd dashboard && npm run build
+npx wrangler pages deploy dist --project-name=qepilot-stack-dashboard
 ```
 
-### 🔍 Health Check
-Comprehensive diagnostics to ensure your Claude Code installation is optimized.
+The static site publishes from `docs/` on the default branch via GitHub Pages.
 
-```bash
-npx claude-code-templates@latest --health-check
-```
+CI deploys are wired in `.github/workflows/deploy.yml` but inactive until
+`CLOUDFLARE_API_TOKEN` and `CLOUDFLARE_ACCOUNT_ID` are set as repository
+secrets.
 
-### 🔌 Plugin Dashboard
-View marketplaces, installed plugins, and manage permissions from a unified interface.
+## Configuration
 
-```bash
-npx claude-code-templates@latest --plugins
-```
+Authentication is intentionally **not configured**. Browsing, search and
+installation all work without it; sign-in, saved collections and download
+tracking do not, and their UI degrades quietly rather than erroring.
 
-## 📖 Documentation
+To enable them, create your own Clerk application, GitHub OAuth app, Supabase
+project and Neon database, then:
 
-**[📚 docs.qapilot.live](https://docs.qapilot.live/)** - Complete guides, examples, and API reference for all components and tools.
+- set `PUBLIC_CLERK_PUBLISHABLE_KEY` and `PUBLIC_GITHUB_CLIENT_ID` as repository
+  **variables** (the deploy workflow reads `${{ vars.* }}`) and in
+  `dashboard/wrangler.toml`
+- set `CLERK_SECRET_KEY`, `GITHUB_CLIENT_SECRET`, `SUPABASE_URL`,
+  `SUPABASE_SERVICE_ROLE_KEY` and `NEON_DATABASE_URL` as Cloudflare Pages
+  secrets via `wrangler pages secret put`
 
-## Contributing
+CLI telemetry is off unless `QEPILOT_TELEMETRY=1` is set.
 
-We welcome contributions! **[Browse existing templates](https://stack.qapilot.live)** to see what's available, then check our [contributing guidelines](CONTRIBUTING.md) to add your own agents, commands, MCPs, settings, or hooks.
+## Credits
 
-**Please read our [Code of Conduct](CODE_OF_CONDUCT.md) before contributing.**
+This is a fork of
+**[claude-code-templates](https://github.com/davila7/claude-code-templates)**
+by **Daniel (San) Ávila**, used under the MIT licence. The component library,
+the CLI and both site codebases are their work; this fork rebrands the sites and
+changes how they are hosted and configured.
 
-## Attribution
+If you find this useful, the upstream project is the place to star, contribute
+components, and support the author.
 
-This collection includes components from multiple sources:
+The component catalogue is still served by upstream infrastructure — see
+`cli-tool/src/upstream-config.js` to point it at your own.
 
-**Scientific Skills:**
-- **[K-Dense-AI/claude-scientific-skills](https://github.com/K-Dense-AI/claude-scientific-skills)** by K-Dense Inc. - MIT License (139 scientific skills for biology, chemistry, medicine, and computational research)
+## Licence
 
-**Official Anthropic:**
-- **[anthropics/skills](https://github.com/anthropics/skills)** - Official Anthropic skills (21 skills)
-- **[anthropics/claude-code](https://github.com/anthropics/claude-code)** - Development guides and examples (10 skills)
-
-**Community Skills & Agents:**
-- **[obra/superpowers](https://github.com/obra/superpowers)** by Jesse Obra - MIT License (14 workflow skills)
-- **[alirezarezvani/claude-skills](https://github.com/alirezarezvani/claude-skills)** by Alireza Rezvani - MIT License (36 professional role skills)
-- **[wshobson/agents](https://github.com/wshobson/agents)** by wshobson - MIT License (48 agents)
-- **NerdyChefsAI Skills** - Community contribution - MIT License (specialized enterprise skills)
-
-**Commands & Tools:**
-- **[awesome-claude-code](https://github.com/hesreallyhim/awesome-claude-code)** by hesreallyhim - CC0 1.0 Universal (21 commands)
-- **[awesome-claude-skills](https://github.com/mehdi-lamrani/awesome-claude-skills)** - Apache 2.0 (community skills)
-- **move-code-quality-skill** - MIT License
-- **cocoindex-claude** - Apache 2.0
-
-Each of these resources retains its **original license and attribution**, as defined by their respective authors.
-We respect and credit all original creators for their work and contributions to the Claude ecosystem.
-
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## 🔗 Links
-
-- **🌐 Browse Templates**: [stack.qapilot.live](https://stack.qapilot.live)
-- **📚 Documentation**: [docs.qapilot.live](https://docs.qapilot.live)
-- **💬 Community**: [GitHub Discussions](https://github.com/davila7/claude-code-templates/discussions)
-- **🐛 Issues**: [GitHub Issues](https://github.com/davila7/claude-code-templates/issues)
-
-## Stargazers over time
-[![Stargazers over time](docs/star-history.svg)](https://stack.qapilot.live/component/skill/git/star-history-chart)
-
----
-
-**⭐ Found this useful? Give us a star to support the project!**
-
-[![Sponsor on GitHub](https://img.shields.io/badge/Sponsor%20on%20GitHub-%E2%9D%A4-EA4AAA?style=for-the-badge&logo=githubsponsors&logoColor=white)](https://github.com/sponsors/davila7)
-
-[![Buy Me A Coffee](https://img.buymeacoffee.com/button-api/?text=Buy%20me%20a%20coffee&slug=daniavila&button_colour=FFDD00&font_colour=000000&font_family=Cookie&outline_colour=000000&coffee_colour=ffffff)](https://buymeacoffee.com/daniavila)
+MIT — see [LICENSE](LICENSE). The original copyright notice is retained, as the
+licence requires.
