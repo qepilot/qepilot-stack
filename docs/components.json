@@ -45791,7 +45791,7 @@
         "name": "frontend-developer",
         "version": "1.0.0",
         "author": {
-          "name": "Claude Code Templates Team"
+          "name": "QEPilot Stack Team"
         },
         "category": "development",
         "keywords": [
@@ -45809,7 +45809,7 @@
         "name": "backend-architect",
         "version": "1.0.0",
         "author": {
-          "name": "Claude Code Templates Team"
+          "name": "QEPilot Stack Team"
         },
         "category": "development",
         "keywords": [
@@ -45827,7 +45827,7 @@
         "name": "fullstack-developer",
         "version": "1.0.0",
         "author": {
-          "name": "Claude Code Templates Team"
+          "name": "QEPilot Stack Team"
         },
         "category": "development",
         "keywords": [
@@ -45845,7 +45845,7 @@
         "name": "devops-engineer",
         "version": "1.0.0",
         "author": {
-          "name": "Claude Code Templates Team"
+          "name": "QEPilot Stack Team"
         },
         "category": "devops",
         "keywords": [
@@ -45863,7 +45863,7 @@
         "name": "mobile-developer",
         "version": "1.0.0",
         "author": {
-          "name": "Claude Code Templates Team"
+          "name": "QEPilot Stack Team"
         },
         "category": "mobile",
         "keywords": [
@@ -45881,7 +45881,7 @@
         "name": "ios-developer",
         "version": "1.0.0",
         "author": {
-          "name": "Claude Code Templates Team"
+          "name": "QEPilot Stack Team"
         },
         "category": "mobile",
         "keywords": [
@@ -45899,7 +45899,7 @@
         "name": "ui-ux-designer",
         "version": "1.0.0",
         "author": {
-          "name": "Claude Code Templates Team"
+          "name": "QEPilot Stack Team"
         },
         "category": "design",
         "keywords": [
@@ -45917,7 +45917,7 @@
         "name": "cli-ui-designer",
         "version": "1.0.0",
         "author": {
-          "name": "Claude Code Templates Team"
+          "name": "QEPilot Stack Team"
         },
         "category": "design",
         "keywords": [

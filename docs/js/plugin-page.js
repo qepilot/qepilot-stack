@@ -51,7 +51,7 @@ class PluginPageManager {
             this.renderRelatedPlugins();
 
             // Update page title
-            document.title = `${this.formatPluginName(this.pluginData.name)} - Claude Code Templates`;
+            document.title = `${this.formatPluginName(this.pluginData.name)} - QEPilot Stack`;
 
             // Setup keyboard listeners
             this.setupKeyboardListeners();
@@ -132,7 +132,7 @@ class PluginPageManager {
         document.getElementById('pluginName').textContent = this.formatPluginName(plugin.name);
         document.getElementById('pluginDescription').textContent = plugin.description;
         document.getElementById('pluginVersion').textContent = `v${plugin.version}`;
-        document.getElementById('pluginAuthor').textContent = plugin.author || 'Claude Code Templates';
+        document.getElementById('pluginAuthor').textContent = plugin.author || 'QEPilot Stack';
 
         // Render keywords
         const keywordsContainer = document.getElementById('pluginKeywords');

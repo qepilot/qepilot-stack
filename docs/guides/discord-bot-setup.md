@@ -60,7 +60,7 @@ COMPONENTS_API_URL=https://aitmpl.com/components.json
    - `DISCORD_APP_ID`
    - `DISCORD_BOT_TOKEN`
    - `DISCORD_PUBLIC_KEY`
-   - `COMPONENTS_API_URL` (opcional, por defecto usa aitmpl.com)
+   - `COMPONENTS_API_URL` (opcional, por defecto usa stack.qapilot.live)
 
 ### 3. Instalar Dependencias
 
@@ -194,7 +194,7 @@ api/
 ### Cache de Componentes
 
 El sistema mantiene `components.json` en memoria por 5 minutos:
-- Primera request: Descarga desde aitmpl.com
+- Primera request: Descarga desde stack.qapilot.live
 - Siguientes requests (< 5 min): Usa cache
 - Después de 5 min: Actualiza automáticamente
 

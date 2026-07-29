@@ -1,4 +1,4 @@
-# Claude Code Templates Website
+# QEPilot Stack Website
 
 This directory contains the static website for browsing and installing Claude Code configuration templates.
 

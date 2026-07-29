@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-This directory contains the static website (aitmpl.com) that serves as the public web interface for browsing and installing Claude Code components. The site is a vanilla JavaScript application that loads component data dynamically and provides an interactive browsing experience for 500+ components including agents, commands, settings, hooks, MCPs, and templates.
+This directory contains the static website (stack.qapilot.live) that serves as the public web interface for browsing and installing Claude Code components. The site is a vanilla JavaScript application that loads component data dynamically and provides an interactive browsing experience for 500+ components including agents, commands, settings, hooks, MCPs, and templates.
 
 ## Development Commands
 
@@ -29,7 +29,7 @@ python scripts/generate_components_json.py
 
 ### Deployment
 - Site is automatically deployed to GitHub Pages when changes are pushed to `docs/` directory
-- Deployed at: https://aitmpl.com (davila7.github.io/claude-code-templates)
+- Deployed at: https://stack.qapilot.live (davila7.github.io/claude-code-templates)
 - Vercel configuration in `vercel.json` for routing
 
 ## Architecture
@@ -360,4 +360,4 @@ CSS is modular:
 - Verify cart data structure matches expected format
 - Clear cache and reload if data structure changed
 
-This website serves as the primary user interface for the Claude Code Templates ecosystem, providing an intuitive way to discover and install 500+ components through a terminal-themed, responsive web interface.
+This website serves as the primary user interface for the QEPilot Stack ecosystem, providing an intuitive way to discover and install 500+ components through a terminal-themed, responsive web interface.

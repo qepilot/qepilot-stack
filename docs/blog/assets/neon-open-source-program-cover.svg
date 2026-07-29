@@ -72,7 +72,7 @@
 
   <!-- Subtitle -->
   <g>
-    <text x="130" y="385" font-family="'Courier New', monospace" font-size="28" font-weight="600" fill="#FFFFFF">Claude Code Templates</text>
+    <text x="130" y="385" font-family="'Courier New', monospace" font-size="28" font-weight="600" fill="#FFFFFF">QEPilot Stack</text>
   </g>
 
   <!-- Partnership badge -->
@@ -112,5 +112,5 @@
   <line x1="100" y1="550" x2="1100" y2="550" stroke="url(#neonGlow)" stroke-width="2"/>
 
   <!-- Branding footer -->
-  <text x="600" y="595" font-family="'Courier New', monospace" font-size="14" fill="#666" text-anchor="middle">aitmpl.com/blog</text>
+  <text x="600" y="595" font-family="'Courier New', monospace" font-size="14" fill="#666" text-anchor="middle">stack.qapilot.live/blog</text>
 </svg>

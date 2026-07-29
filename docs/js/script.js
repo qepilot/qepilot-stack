@@ -515,7 +515,7 @@ function showContributeModal() {
                 </div>
                 <div class="modal-body">
                     <div class="contribute-intro">
-                        <p>Help expand Claude Code Templates by contributing new languages or frameworks! Follow these steps to submit your contribution:</p>
+                        <p>Help expand QEPilot Stack by contributing new languages or frameworks! Follow these steps to submit your contribution:</p>
                     </div>
                     
                     <div class="contribute-steps">

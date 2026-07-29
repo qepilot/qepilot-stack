@@ -2,8 +2,8 @@
   "articles": [
     {
       "id": "neon-open-source-program",
-      "title": "Claude Code Templates Joins the Neon Open Source Program",
-      "description": "We're excited to announce that Claude Code Templates has been accepted into the Neon Open Source Program, bringing $5,000 annual sponsorship, co-marketing opportunities, and instant Postgres provisioning to all users.",
+      "title": "QEPilot Stack Joins the Neon Open Source Program",
+      "description": "We're excited to announce that QEPilot Stack has been accepted into the Neon Open Source Program, bringing $5,000 annual sponsorship, co-marketing opportunities, and instant Postgres provisioning to all users.",
       "url": "neon-open-source-program/",
       "image": "assets/neon-open-source-program-cover.svg",
       "category": "Partnership",
@@ -142,8 +142,8 @@
     },
     {
       "id": "claude-code-templates-guide",
-      "title": "Complete Guide to Claude Code Templates",
-      "description": "Comprehensive introduction to Claude Code Templates, covering installation, configuration, and best practices for AI-powered development.",
+      "title": "Complete Guide to QEPilot Stack",
+      "description": "Comprehensive introduction to QEPilot Stack, covering installation, configuration, and best practices for AI-powered development.",
       "url": "https://medium.com/latinxinai/complete-guide-to-claude-code-templates-4e53d6688b34",
       "image": "https://miro.medium.com/v2/resize:fit:1400/format:webp/1*YwxsC2eeW5fW1K6E8VBZpA.png",
       "category": "Getting Started",
@@ -219,7 +219,7 @@
       "title": "Simple Notifications Hook for Claude Code",
       "description": "Get instant desktop notifications when Claude Code operations complete. Cross-platform hook for macOS and Linux.",
       "url": "simple-notifications-hook/",
-      "image": "https://www.aitmpl.com/blog/assets/simple-notifications-hook-cover.png",
+      "image": "https://stack.qapilot.live/blog/assets/simple-notifications-hook-cover.png",
       "category": "Automation",
       "readTime": "4 min read",
       "tags": ["Claude Code", "Hooks", "Notifications", "Automation", "Desktop Alerts"],

@@ -25,5 +25,5 @@ Disallow: /.git/
 Disallow: /.vercel/
 Disallow: /dev-server.js
 
-# Sitemap location (fixed: was pointing to GitHub Pages instead of aitmpl.com)
-Sitemap: https://aitmpl.com/sitemap.xml
+# Sitemap location (fixed: was pointing to GitHub Pages instead of stack.qapilot.live)
+Sitemap: https://stack.qapilot.live/sitemap.xml

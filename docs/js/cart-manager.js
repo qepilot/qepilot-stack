@@ -1,4 +1,4 @@
-// Shopping Cart Manager for Claude Code Templates
+// Shopping Cart Manager for QEPilot Stack
 class CartManager {
     constructor() {
         this.cart = {
@@ -655,12 +655,12 @@ function toggleShareDropdown() {
 
 function shareOnTwitter() {
     const command = document.getElementById('generatedCommand').textContent.trim();
-    const message = `🚀 Just created this Claude Code Templates stack!
+    const message = `🚀 Just created this QEPilot Stack stack!
 
 Just run this command:
 ${command}
 
-Create yours at https://aitmpl.com`;
+Create yours at https://stack.qapilot.live`;
     const twitterUrl = `https://twitter.com/intent/tweet?text=${encodeURIComponent(message)}`;
     window.open(twitterUrl, '_blank');
     
@@ -670,12 +670,12 @@ Create yours at https://aitmpl.com`;
 
 function shareOnThreads() {
     const command = document.getElementById('generatedCommand').textContent.trim();
-    const message = `🚀 Just created this Claude Code Templates stack!
+    const message = `🚀 Just created this QEPilot Stack stack!
 
 Just run this command:
 ${command}
 
-Create yours at https://aitmpl.com`;
+Create yours at https://stack.qapilot.live`;
     const threadsUrl = `https://threads.net/intent/post?text=${encodeURIComponent(message)}`;
     window.open(threadsUrl, '_blank');
     

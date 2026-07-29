@@ -77,5 +77,5 @@
   <text x="600" y="595" font-family="'Courier New', monospace" font-size="20" fill="#888888" text-anchor="middle">Claude Code Statusline with Clickable Deploy Links</text>
 
   <!-- Footer -->
-  <text x="600" y="622" font-family="'Courier New', monospace" font-size="14" fill="#444444" text-anchor="middle">Claude Code Templates  |  aitmpl.com</text>
+  <text x="600" y="622" font-family="'Courier New', monospace" font-size="14" fill="#444444" text-anchor="middle">QEPilot Stack  |  stack.qapilot.live</text>
 </svg>

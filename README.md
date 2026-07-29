@@ -56,13 +56,13 @@ npx claude-code-templates@latest --skill web-data/search,web-data/scrape,web-dat
 
 ---
 
-# Claude Code Templates ([aitmpl.com](https://aitmpl.com))
+# QEPilot Stack ([stack.qapilot.live](https://stack.qapilot.live))
 
 **Ready-to-use configurations for Anthropic's Claude Code.** A comprehensive collection of AI agents, custom commands, settings, hooks, external integrations (MCPs), and project templates to enhance your development workflow.
 
 ## Browse & Install Components and Templates
 
-**[Browse All Templates](https://aitmpl.com)** - Interactive web interface to explore and install 100+ agents, commands, settings, hooks, and MCPs.
+**[Browse All Templates](https://stack.qapilot.live)** - Interactive web interface to explore and install 100+ agents, commands, settings, hooks, and MCPs.
 
 <img width="1787" height="958" alt="image" src="https://github.com/user-attachments/assets/d84feaa4-f871-4843-bbee-42d8f51b2f21" />
 
@@ -97,7 +97,7 @@ npx claude-code-templates@latest --mcp database/postgresql-integration --yes
 
 ## 🛠️ Additional Tools
 
-Beyond the template catalog, Claude Code Templates includes powerful development tools:
+Beyond the template catalog, QEPilot Stack includes powerful development tools:
 
 ### 📊 Claude Code Analytics
 Monitor your AI-powered development sessions in real-time with live state detection and performance metrics.
@@ -133,11 +133,11 @@ npx claude-code-templates@latest --plugins
 
 ## 📖 Documentation
 
-**[📚 docs.aitmpl.com](https://docs.aitmpl.com/)** - Complete guides, examples, and API reference for all components and tools.
+**[📚 docs.qapilot.live](https://docs.qapilot.live/)** - Complete guides, examples, and API reference for all components and tools.
 
 ## Contributing
 
-We welcome contributions! **[Browse existing templates](https://aitmpl.com)** to see what's available, then check our [contributing guidelines](CONTRIBUTING.md) to add your own agents, commands, MCPs, settings, or hooks.
+We welcome contributions! **[Browse existing templates](https://stack.qapilot.live)** to see what's available, then check our [contributing guidelines](CONTRIBUTING.md) to add your own agents, commands, MCPs, settings, or hooks.
 
 **Please read our [Code of Conduct](CODE_OF_CONDUCT.md) before contributing.**
 
@@ -173,13 +173,13 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 🔗 Links
 
-- **🌐 Browse Templates**: [aitmpl.com](https://aitmpl.com)
-- **📚 Documentation**: [docs.aitmpl.com](https://docs.aitmpl.com)
+- **🌐 Browse Templates**: [stack.qapilot.live](https://stack.qapilot.live)
+- **📚 Documentation**: [docs.qapilot.live](https://docs.qapilot.live)
 - **💬 Community**: [GitHub Discussions](https://github.com/davila7/claude-code-templates/discussions)
 - **🐛 Issues**: [GitHub Issues](https://github.com/davila7/claude-code-templates/issues)
 
 ## Stargazers over time
-[![Stargazers over time](docs/star-history.svg)](https://www.aitmpl.com/component/skill/git/star-history-chart)
+[![Stargazers over time](docs/star-history.svg)](https://stack.qapilot.live/component/skill/git/star-history-chart)
 
 ---
 

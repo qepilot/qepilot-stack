@@ -1,4 +1,4 @@
-// Event Tracker for Claude Code Templates Website
+// Event Tracker for QEPilot Stack Website
 // Batches and sends website analytics events (search, cart, component views)
 
 class EventTracker {

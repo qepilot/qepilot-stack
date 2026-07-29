@@ -1,6 +1,6 @@
 /**
  * Trending Page JavaScript
- * GitHub-inspired trending components page for Claude Code Templates
+ * GitHub-inspired trending components page for QEPilot Stack
  */
 
 class TrendingPage {

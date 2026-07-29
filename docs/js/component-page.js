@@ -1015,8 +1015,8 @@ class ComponentPageManager {
         const category = this.component.category || 'Development';
         
         // Enhanced page title with component type and category
-        const pageTitle = `${cleanName} ${typeCapitalized} - Claude Code Templates`;
-        const enhancedDescription = `${description} | ${typeCapitalized} for ${category} | Claude Code Templates - AI-powered development tools`;
+        const pageTitle = `${cleanName} ${typeCapitalized} - QEPilot Stack`;
+        const enhancedDescription = `${description} | ${typeCapitalized} for ${category} | QEPilot Stack - AI-powered development tools`;
         
         // Generate proper canonical URL for SEO
         const canonicalURL = this.generateCanonicalURL();
@@ -1111,7 +1111,7 @@ class ComponentPageManager {
             "url": url,
             "author": {
                 "@type": "Organization",
-                "name": "Claude Code Templates Community"
+                "name": "QEPilot Stack Community"
             },
             "offers": {
                 "@type": "Offer",

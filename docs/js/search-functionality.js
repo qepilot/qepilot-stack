@@ -1,4 +1,4 @@
-// Search functionality for Claude Code Templates
+// Search functionality for QEPilot Stack
 let searchActive = false;
 let searchResults = [];
 let allComponents = {};
