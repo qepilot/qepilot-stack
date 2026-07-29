@@ -5,10 +5,21 @@ compatibility_flags = ["nodejs_compat"]
 pages_build_output_dir = "./dist"
 
 # Plain-text build-time vars (PUBLIC_* must be here, not as secrets)
+#
+# Auth is intentionally UNCONFIGURED for the first deploy. The values that
+# used to sit here were the upstream author's live Clerk instance and GitHub
+# OAuth app — domain-locked to their site and not ours to reuse. Both
+# consumers degrade gracefully when these are empty:
+#   ClerkIsland.tsx      -> renders nothing when the key is absent
+#   SendToRepoModal.tsx  -> shows "GitHub OAuth is not configured"
+#
+# To enable auth later, create your own Clerk application and GitHub OAuth
+# app, then put YOUR publishable key / client id here and set the matching
+# CLERK_SECRET_KEY and GITHUB_CLIENT_SECRET as Cloudflare Pages secrets.
 [vars]
-PUBLIC_CLERK_PUBLISHABLE_KEY = "pk_live_Y2xlcmsuYWl0bXBsLmNvbSQ"
+PUBLIC_CLERK_PUBLISHABLE_KEY = ""
 PUBLIC_COMPONENTS_JSON_URL = "/components.json"
-PUBLIC_GITHUB_CLIENT_ID = "Ov23li3KjfA4cuLi5c0k"
+PUBLIC_GITHUB_CLIENT_ID = ""
 
 # Secrets are set via Cloudflare Dashboard or `wrangler secret put`:
 # CLERK_SECRET_KEY
