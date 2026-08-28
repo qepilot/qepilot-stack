@@ -1,12 +1,32 @@
 {
-  "lastUpdated": "2026-08-27T13:16:08.501887+00:00",
-  "totalJobs": 103,
+  "lastUpdated": "2026-08-28T14:40:52.180268+00:00",
+  "totalJobs": 105,
   "sources": [
     "Anthropic",
     "HackerNews",
     "WeWorkRemotely"
   ],
   "jobs": [
+    {
+      "id": "anth-5407337008",
+      "company": "Anthropic",
+      "position": "Product Manager, Beneficial Deployments (Labs)",
+      "location": "San Francisco, CA | New York City, NY",
+      "remote": false,
+      "salary": "",
+      "description": "Claude has had commercial impact, but there’s significantly more that frontier AI can do outside of general use cases. Some of the largest opportunities: a step change in health, education, and economic opportunity for the people and institutions the technology would otherwise reach last, sit...",
+      "applyUrl": "https://job-boards.greenhouse.io/anthropic/jobs/5407337008",
+      "source": "Anthropic",
+      "sourceUrl": "https://job-boards.greenhouse.io/anthropic/jobs/5407337008",
+      "postedAt": "2026-08-27T15:48:13-04:00",
+      "tags": [
+        "Rust",
+        "AWS",
+        "Claude Code",
+        "Anthropic"
+      ],
+      "companyIcon": "https://www.anthropic.com/favicon.ico"
+    },
     {
       "id": "anth-5392054008",
       "company": "Anthropic",
@@ -216,6 +236,29 @@
         "Rust",
         "AWS",
         "Claude Code",
+        "Anthropic"
+      ],
+      "companyIcon": "https://www.anthropic.com/favicon.ico"
+    },
+    {
+      "id": "anth-5391151008",
+      "company": "Anthropic",
+      "position": "AI Operations Engineer, Partnerships",
+      "location": "San Francisco, CA",
+      "remote": false,
+      "salary": "",
+      "description": "Our Partner Experience team is building an AI-native operating model. We already run a growing set of partner-facing systems: a partner portal, CRM workflows, enablement and certification platforms, and the trackers that connect them. The systems lead on our team owns that foundation — the portal,...",
+      "applyUrl": "https://job-boards.greenhouse.io/anthropic/jobs/5391151008",
+      "source": "Anthropic",
+      "sourceUrl": "https://job-boards.greenhouse.io/anthropic/jobs/5391151008",
+      "postedAt": "2026-08-14T18:07:17-04:00",
+      "tags": [
+        "JavaScript",
+        "Python",
+        "Rust",
+        "AWS",
+        "Claude Code",
+        "Rails",
         "Anthropic"
       ],
       "companyIcon": "https://www.anthropic.com/favicon.ico"
